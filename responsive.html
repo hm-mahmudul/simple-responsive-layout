@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <style>
+
+        body{
+            border: 1px solid skyblue;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .image-container{
+            border: 1px solid chartreuse;
+            display: flex;
+        }
+        .image-container div{
+            width: 50%;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .image-container{
+                flex-direction: column-reverse;
+            }
+        } 
+    </style>
+  </head>
+  <body>
+    <h2>We should remember the 7 things for responsive website.</h2>
+    <ol>
+      <li>Meta tag viewport</li>
+      <li>CSS relative unit like em, rem, vh, vw and %</li>
+      <li>Body max width and horizontal center align</li>
+      <li> Image ke fluid korete hbe, mane 100% korte hbe.</li>
+      <li>Two column: Display flex and use media query te flex direction column or reverse column use korte hbe</li>
+      <li>Multi column: Grid layout use korte hbe and media query diyee grid template row or column use korte hbe</li>
+      <li>Menu responsive: etar jonno Javascript use korte hbe</li>
+    </ol>
+    <div class="image-container">
+      <div><img src="./Images/healthy-food.jpg" alt="" /></div>
+      <div><img src="./Images/tiger.webp" alt="" /></div>
+    </div>
+  </body>
+</html>
